@@ -15,7 +15,7 @@ body {
 
     /* Set a background color that will be displayed
        while the background image is loading */
-    background-color: #464646;
+    background-color: white;
 }
 
 .madeon-button{
@@ -23,4 +23,16 @@ body {
     width:100px;
     background-color:lightblue;
     cursor: url('assets/images/vodc9otcnpex.png'), auto;
+}
+
+.moving_gif_col{
+    position: absolute;
+    top: 20%;
+}
+.moving_gif{
+    width: 100%;
+}
+
+.inactive{
+    display: none;
 }
