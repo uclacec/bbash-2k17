@@ -35,9 +35,17 @@ $(document).ready(function() {
     function update() {
         var units = countdown.DAYS | countdown.HOURS | countdown.MINUTES | countdown.SECONDS;
         var count_obj = countdown(null, bbash_time, units);
-        var timestr = pad(count_obj.days) + '\xa0\xa0\xa0DAYS\xa0\xa0\xa0' + pad(count_obj.hours) +
+        var daystr = pad(count_obj.days) + '\xa0\xa0\xa0DAYS';
+        var spanstr = '<br class="mobile-break">';
+        var timestr = pad(count_obj.hours) +
             '\xa0\xa0\xa0:\xa0\xa0\xa0' + pad(count_obj.minutes) + '\xa0\xa0\xa0:\xa0\xa0\xa0' + pad(count_obj.seconds);
-        $('#countdown').text(timestr);
+        $('#countdown .days').text(daystr);
+        $('#countdown .time').text(timestr);
+    }
+
+    if($('html').width() <= 900){
+        $('#slow-wave').attr('src','assets/images/WavyGif_P1_Mobile.gif');
+        $('#fast-wave').attr('src','assets/images/WavyGif_P2_Mobile.gif');
     }
 
     update();

@@ -25,7 +25,7 @@ body {
 .button{
     display:inline-block;
     height:100%;
-    /*border:2px solid black;*/
+    /*border:2px solid grey;*/
     z-index:1000;
 }
 #b, #n {width:14%;}
@@ -40,7 +40,10 @@ body {
 }
 
 .container-fluid .moving_gif{
-    width: 100%;
+    width: 120%;
+    position:relative;
+    top:-20vh;
+    left:-7vw;
 }
 
 .inactive{
@@ -56,10 +59,10 @@ body {
     top: 70%;
     text-align: center;
     vertical-align: middle;
-    text: black;
+    color: black;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
-    font-size: 4.5em;
+    font-size:4.5em;
     font-weight: 900;
 }
 
@@ -68,31 +71,49 @@ body {
     bottom: 8%;
     text-align: center;
     vertical-align: middle;
-    text: black;
+    color: black;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
     font-size: 1.25em;
     font-weight: 900;
 }
+.mobile-break{display:none;}
 @media only screen and (max-width: 990px) {
+    #countdown{font-size:2.7em;}
+    .mobile-break{display:block;}
+    .container-fluid .moving_gif{
+        width:190%;
+        left:-40vw;
+    }
     #music{
         width:100vw;
-        height:35vw;
-        margin-top:20vw;
+        height:50vw;
+        margin-top:18vw;
         margin-left:0;
     }
+    #top-row{
+        margin-left:12%;
+    }
     #bottom-row{
-        margin-top:-8vw;
-        margin-left:46%;
+        margin-top:0;
+        margin-left:7%;
         z-index:10;
     }
+    #b, #n {width:20%;}
+    #r, #u{width:20%}
+    #i{width:10%;}
 }
 @media only screen and (max-width:768px) and (max-height:1024px){
-    #music{
-        margin-top:26vw;
+    #music{  margin-top:26vw;  }
+    #countdown{font-size:4.5em;}
+    .container-fluid .moving_gif{
+        width:270%;
+        left:-53vw;
+        top:-23vh;
     }
+
 }
 @media only screen and (max-width: 560px){
-    #ba, #a, #s, #h { width:23%;}
-    #music{margin-top:20vh;}
+    #ba, #a, #s, #h { width:19%;}
+    #music{margin-top:18vh;}
 }
