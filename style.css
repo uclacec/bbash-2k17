@@ -50,10 +50,6 @@ body {
     display: none;
 }
 
-.madeon-background{
-    background-image: url("assets/images/bb_madeon.gif");
-}
-
 #countdown{
     position: fixed;
     top: 70%;
