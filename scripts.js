@@ -26,10 +26,10 @@ $(document).ready(function() {
         $('.text').removeClass('inactive');
     });
 //Fade in Animations
-    var delay = 300;
-    setTimeout(makeActive, 300, '#pre-click');
+    var delay = 600;
+    setTimeout(makeActive, 500, '#pre-click');
     setTimeout(makeActive, 2*delay, '#countdown');
-    setTimeout(makeActive, 3*delay, '#sponsors');
+    setTimeout(makeActive, 3.5*delay, '#sponsors');
 
 //Functions to control countdown timer
     function update() {

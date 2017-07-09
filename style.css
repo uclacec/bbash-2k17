@@ -25,7 +25,7 @@ body {
 .button{
     display:inline-block;
     height:100%;
-    border:2px solid black;
+    /*border:2px solid black;*/
     z-index:1000;
 }
 #b, #n {width:14%;}
@@ -39,7 +39,7 @@ body {
     top: 20%;
 }
 
-.moving_gif{
+.container-fluid .moving_gif{
     width: 100%;
 }
 
