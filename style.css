@@ -12,7 +12,7 @@ body {
     opacity:.5;
     width:66vw;
     height:23vw;
-    margin-top:12vh;
+    margin-top:20vh;
     margin-left:17vw;
 }
 
@@ -61,7 +61,7 @@ body {
     #music{
         width:100vw;
         height:35vw;
-        margin-top:5vw;
+        margin-top:20vw;
         margin-left:0;
     }
     #bottom-row{
@@ -72,10 +72,10 @@ body {
 }
 @media only screen and (max-width:768px) and (max-height:1024px){
     #music{
-        margin-top:18vw;
+        margin-top:26vw;
     }
 }
 @media only screen and (max-width: 560px){
     #ba, #a, #s, #h { width:23%;}
-    #music{margin-top:9vh;}
+    #music{margin-top:20vh;}
 }
