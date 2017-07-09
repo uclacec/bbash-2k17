@@ -25,7 +25,7 @@ body {
 .button{
     display:inline-block;
     height:100%;
-    border:2px solid black;
+    /*border:2px solid black;*/
     z-index:1000;
 }
 #b, #n {width:14%;}
@@ -39,16 +39,16 @@ body {
     top: 20%;
 }
 
-.moving_gif{
+.container-fluid .moving_gif{
     width: 100%;
-}
-
-.fill-space{
-    display: inline-block;
 }
 
 .inactive{
     display: none;
+}
+
+.madeon-background{
+    background-image: url("assets/images/bb_madeon.gif");
 }
 
 #countdown{
@@ -56,6 +56,23 @@ body {
     top: 70%;
     text-align: center;
     vertical-align: middle;
+    text: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 4.5em;
+    font-weight: 900;
+}
+
+#sponsors{
+    position: fixed;
+    bottom: 8%;
+    text-align: center;
+    vertical-align: middle;
+    text: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 1.25em;
+    font-weight: 900;
 }
 @media only screen and (max-width: 990px) {
     #music{
