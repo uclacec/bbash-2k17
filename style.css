@@ -8,7 +8,7 @@ body {
 
 #music{
     position:absolute;
-    background-color:lightgrey;
+    background:transparent;
     opacity:.5;
     width:66vw;
     height:23vw;
@@ -26,13 +26,13 @@ body {
     display:inline-block;
     height:100%;
     border:2px solid black;
-    cursor: url('assets/images/vodc9otcnpex.png'), auto;
     z-index:1000;
 }
 #b, #n {width:14%;}
 #r, #u{width:12%}
 #i{width:5%;}
 #ba, #a, #s, #h { width:24%;}
+#b{cursor: url('assets/images/vodc9otcnpex.png'), auto;}
 
 .moving_gif_col{
     position: absolute;
