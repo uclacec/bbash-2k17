@@ -1,7 +1,6 @@
 /**
  * Created by danielhuang on 7/5/17.
  */
-
 var madeon = new Audio('assets/music/Porter_Robinson__Madeon___Shelter_(Official_Audio).mp3');
 //R
 var song1 = new Audio('assets/music/song.mp3');

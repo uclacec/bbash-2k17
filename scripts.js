@@ -1,7 +1,7 @@
 /**
  * Created by danielhuang on 7/5/17.
  */
-$('.moving_gif_col').click(function() {
+/*$('.moving_gif_col').click(function() {
     if($(this).attr('id') === 'pre-click'){
         $(this).addClass('inactive');
         $('#post-click').removeClass('inactive');
@@ -12,7 +12,7 @@ $('.moving_gif_col').click(function() {
         $('#pre-click').removeClass('inactive');
         $('body').removeClass('background-image: assets/images/bb_madeon.gif')
     }
-});
+});*/
 
 (function() {
     function byId(id) {
