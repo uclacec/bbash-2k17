@@ -35,17 +35,28 @@ body {
 #b{cursor: url('assets/images/vodc9otcnpex.png'), auto;}
 
 .moving_gif_col{
-    position: absolute;
+    position: fixed;
     top: 20%;
 }
+
 .moving_gif{
     width: 100%;
+}
+
+.fill-space{
+    display: inline-block;
 }
 
 .inactive{
     display: none;
 }
 
+#countdown{
+    position: fixed;
+    top: 70%;
+    text-align: center;
+    vertical-align: middle;
+}
 @media only screen and (max-width: 990px) {
     #music{
         width:100vw;
