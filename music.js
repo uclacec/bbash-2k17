@@ -268,6 +268,9 @@ $(window).on("load", function() {
                 tapped[8] = true;
                 $('#post-click').removeClass('inactive');
                 $('#pre-click').addClass('inactive');
+                $('#2k17').addClass('inactive');
+                $('.text').addClass('inactive');
+                $('body').css({'background-color':'white'})
             } else {
                 tapped[8] = false;
                 //song8.pause();

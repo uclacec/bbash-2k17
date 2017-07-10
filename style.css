@@ -2,9 +2,8 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
     background-color: white;
-    min-height: 100%;
+    background-size: cover;
 }
 
 #music{
