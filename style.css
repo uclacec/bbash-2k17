@@ -29,7 +29,7 @@ html {
 .button{
     display:inline-block;
     height:100%;
-    /*border:2px solid grey;*/
+    border:2px solid grey;
     z-index:1000;
 }
 #b, #n {width:14%;}
@@ -95,7 +95,7 @@ html {
 }
 .mobile-break{display:none;}
 @media only screen and (max-width: 990px) {
-    #countdown{font-size:2.7em;}
+    #countdown{font-size:2em;}
     .mobile-break{display:block;}
     .container-fluid .moving_gif{
         width:190%;
