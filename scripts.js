@@ -68,6 +68,7 @@ $(document).ready(function() {
     if($('html').width() <= 900){
         $('#slow-wave').attr('src','assets/images/WavyGif_P1_Mobile.gif');
         $('#fast-wave').attr('src','assets/images/WavyGif_P2_Mobile.gif');
+        $('.question').attr('src','assets/images/-----_Mobile.gif');
     }
 
     $('.moving_gif a').click(function(event){

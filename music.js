@@ -118,7 +118,9 @@ if($('html').width() <= 600){
         tapped = [false, false, false, false, false, false, false, false, false];
         $('#post-click').addClass('inactive');
         $('#pre-click').removeClass('inactive');
+        $('#2k17').addClass('inactive');
         $('.text').removeClass('inactive');
+        $('body').css({'background-color':'white'})
     });
     //B
     $('#music #top-row #b').on("click",function (){
