@@ -73,11 +73,11 @@ $(window).on("load", function() {
 
 //letter BA
     $('#music #bottom-row #ba').on("mouseenter",function (){
-        song5.play();
+        //song5.play();
         $('#body').css({'background-image':'url(assets/images/backgrounds/6B_Carnival.jpg)'});
     });
     $('#music #bottom-row #ba').on("mouseleave click",function(){
-        song5.pause();
+        //song5.pause();
         $('#body').css({'background-image':'url()'})
     });
 
