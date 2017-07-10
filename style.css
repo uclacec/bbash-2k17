@@ -44,6 +44,16 @@ html {
     top: 20%;
 }
 
+#hover{
+    font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align:center;
+    font-style:italic;
+    font-weight:900;
+    top:10vh;
+    position:fixed;
+    font-size:2em;
+}
+
 .container-fluid .moving_gif{
     width: 120%;
     position:relative;
