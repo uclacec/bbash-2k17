@@ -3,23 +3,23 @@
  */
 $(window).on("load", function() {
     // weave your magic here.
-    var song = new Audio('assets/music/Porter_Robinson__Madeon___Shelter_(Official_Audio).mp3');
-// //R
-// var song1 = new Audio('assets/music/song.mp3');
-// //U
-// var song2 = new Audio('assets/music/song.mp3');
-// //I
-// var song3 = new Audio('assets/music/song.mp3');
-// //N
-// var song4 = new Audio('assets/music/song.mp3');
-// //BA
-// var song5 = new Audio('assets/music/song.mp3');
-// //S
-// var song6 = new Audio('assets/music/song.mp3');
-// //A
-// var song7 = new Audio('assets/music/song.mp3');
-// //H
-// var song8 = new Audio('assets/music/song.mp3');
+    var song = new Audio('assets/music/Chance.mp3');
+    // //R
+    // var song1 = new Audio('assets/music/song.mp3');
+    //U
+    var song2 = new Audio('assets/music/Madeon_Pay_No_Mind.mp3');
+    // //I
+    // var song3 = new Audio('assets/music/song.mp3');
+    //N
+    var song4 = new Audio('assets/music/SweaterJoe.mp3');
+    //BA
+    //var song5 = new Audio('assets/music/SweaterJoe.mp3');
+    //S
+    var song6 = new Audio('assets/music/SweaterBeats.mp3');
+    //A
+    //var song7 = new Audio('assets/music/SweaterBeats.mp3');
+    //H
+    var song8 = new Audio('assets/music/TyDolla$ign.mp3');
 
 //letter B (bruin)
     $('#music #top-row #b').on("mouseenter",function (){
@@ -43,11 +43,11 @@ $(window).on("load", function() {
 
 //letter U
     $('#music #top-row #u').on("mouseenter",function (){
-        //song2.play();
+        song2.play();
         $('#body').css({'background-image':'url(assets/images/backgrounds/3U_Madeon.jpg)'});
     });
     $('#music #top-row #u').on("mouseleave click",function(){
-        //song2.pause();
+        song2.pause();
         $('#body').css({'background-image':'url()'})
     });
 
@@ -63,31 +63,31 @@ $(window).on("load", function() {
 
 //letter N
     $('#music #top-row #n').on("mouseenter",function (){
-        //song4.play();
+        song4.play();
         $('#body').css({'background-image':'url(assets/images/backgrounds/5N_SweaterJoe.jpg)'});
     });
     $('#music #top-row #n').on("mouseleave click",function(){
-        //song4.pause();
+        song4.pause();
         $('#body').css({'background-image':'url()'})
     });
 
 //letter BA
     $('#music #bottom-row #ba').on("mouseenter",function (){
-        //song5.play();
+        song5.play();
         $('#body').css({'background-image':'url(assets/images/backgrounds/6B_Carnival.jpg)'});
     });
     $('#music #bottom-row #ba').on("mouseleave click",function(){
-        //song5.pause();
+        song5.pause();
         $('#body').css({'background-image':'url()'})
     });
 
 //letter A
     $('#music #bottom-row #a').on("mouseenter",function (){
-        //song6.play();
+        song6.play();
         $('#body').css({'background-image':'url(assets/images/backgrounds/7A_SweaterBeats.jpg)'});
     });
     $('#music #bottom-row #a').on("mouseleave click",function(){
-        //song6.pause();
+        song6.pause();
         $('#body').css({'background-image':'url()'})
     });
 
@@ -103,11 +103,11 @@ $(window).on("load", function() {
 
 //letter H
     $('#music #bottom-row #h').on("mouseenter",function (){
-        //song7.play();
+        song8.play();
         $('#body').css({'background-image':'url(assets/images/backgrounds/9H_TyDolla$ign.jpg)'});
     });
     $('#music #bottom-row #h').on("mouseleave click",function(){
-        //song7.pause();
+        song8.pause();
         $('#body').css({'background-image':'url()'})
     });
 
@@ -127,14 +127,14 @@ $(window).on("load", function() {
         //B
         $('#music #top-row #b').on("click",function (){
             if(tapped[0] === false){
-                //song.play();
+                song.play();
                 $('#body').css({'background-image':'url(assets/images/backgrounds/1B_Chance.jpg)'});
                 tapped[0] = true;
                 $('#post-click').removeClass('inactive');
                 $('#pre-click').addClass('inactive');
             } else {
                 tapped[0] = false;
-                //song.pause();
+                song.pause();
                 $('#post-click').addClass('inactive');
                 $('#pre-click').removeClass('inactive');
                 $('#body').css({'background-image':''});
@@ -161,14 +161,14 @@ $(window).on("load", function() {
         //U
         $('#music #top-row #u').on("click",function (){
             if(tapped[2] === false){
-                //song2.play();
+                song2.play();
                 $('#body').css({'background-image':'url(assets/images/backgrounds/3U_Madeon.jpg)'});
                 tapped[2] = true;
                 $('#post-click').removeClass('inactive');
                 $('#pre-click').addClass('inactive');
             } else {
                 tapped[2] = false;
-                //song2.pause();
+                song2.pause();
                 $('#post-click').addClass('inactive');
                 $('#pre-click').removeClass('inactive');
                 $('#body').css({'background-image':''});
@@ -195,14 +195,14 @@ $(window).on("load", function() {
         //N
         $('#music #top-row #n').on("click",function (){
             if(tapped[4] === false){
-                //song4.play();
+                song4.play();
                 $('#body').css({'background-image':'url(assets/images/backgrounds/5N_SweaterJoe.jpg)'});
                 tapped[4] = true;
                 $('#post-click').removeClass('inactive');
                 $('#pre-click').addClass('inactive');
             } else {
                 tapped[4] = false;
-                //song4.pause();
+                song4.pause();
                 $('#post-click').addClass('inactive');
                 $('#pre-click').removeClass('inactive');
                 $('#body').css({'background-image':''});
@@ -229,14 +229,14 @@ $(window).on("load", function() {
         //A
         $('#music #bottom-row #a').on("click",function (){
             if(tapped[6] === false){
-                //song6.play();
+                song6.play();
                 $('#body').css({'background-image':'url(assets/images/backgrounds/7A_SweaterBeats.jpg)'});
                 tapped[6] = true;
                 $('#post-click').removeClass('inactive');
                 $('#pre-click').addClass('inactive');
             } else {
                 tapped[6] = false;
-                //song6.pause();
+                song6.pause();
                 $('#post-click').addClass('inactive');
                 $('#pre-click').removeClass('inactive');
                 $('#body').css({'background-image':''});
@@ -263,7 +263,7 @@ $(window).on("load", function() {
         //H
         $('#music #bottom-row #h').on("click",function (){
             if(tapped[8] === false){
-                //song8.play();
+                song8.play();
                 $('#body').css({'background-image':'url(assets/images/backgrounds/9H_TyDolla$ign.jpg)'});
                 tapped[8] = true;
                 $('#post-click').removeClass('inactive');
@@ -273,7 +273,7 @@ $(window).on("load", function() {
                 $('body').css({'background-color':'white'})
             } else {
                 tapped[8] = false;
-                //song8.pause();
+                song8.pause();
                 $('#post-click').addClass('inactive');
                 $('#pre-click').removeClass('inactive');
                 $('#body').css({'background-image':''});
