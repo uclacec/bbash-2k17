@@ -37,7 +37,11 @@ html {
 #i{width:5%;}
 #q{height:60%;}
 #ba, #a, #s, #h, #q { width:19%;}
-#b{cursor: url('assets/images/vodc9otcnpex.png'), auto;}
+
+#b{cursor: url('assets/images/chancelogo.png'), auto;}
+#u{cursor: url('assets/images/madeonlogo.png'),auto;}
+#a{cursor: url('assets/images/sweaterbeatslogo.gif'),auto;}
+#h{cursor: url('assets/images/tydollalogo.png'),auto;}
 
 .moving_gif_col{
     position: fixed;

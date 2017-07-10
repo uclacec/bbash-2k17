@@ -38,7 +38,7 @@ $(document).ready(function() {
         $('.text').removeClass('inactive');
     });
     $('#q').mouseenter(function(){
-        $('#hover').removeClass('inactive')
+        $('#hover').addClass('inactive')
         $('#pre-click').addClass('inactive');
         $('#post-click').addClass('inactive');
         $('#2k17').removeClass('inactive');
