@@ -5,6 +5,10 @@ body {
     background-color: white;
     background-size: cover;
 }
+html {
+    height: 100vh; /* set viewport constraint */
+    min-height: 100%; /* enforce height */
+}
 
 #music{
     position:absolute;
