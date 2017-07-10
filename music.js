@@ -283,6 +283,7 @@ $(window).on("load", function() {
         $('#music #bottom-row #qm').on("click",function (){
             if(tapped[8] === false){
                 tapped[8] = true;
+                $('#hover').addClass('inactive');
                 $('#pre-click').addClass('inactive');
                 $('#post-click').addClass('inactive');
                 $('#2k17').removeClass('inactive');
@@ -290,6 +291,7 @@ $(window).on("load", function() {
                 $('body').css({'background-color':'black'})
             } else {
                 tapped[8] = false;
+                $('#hover').removeClass('inactive');
                 $('#post-click').addClass('inactive');
                 $('#pre-click').removeClass('inactive');
                 $('#2k17').addClass('inactive');
