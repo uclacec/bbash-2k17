@@ -19,7 +19,7 @@ body {
 #top-row, #bottom-row{height:60%;}
 #bottom-row{
     margin-top:-4.3vw;
-    margin-left:49%;
+    margin-left:36%;
     z-index:10;
 }
 .button{
@@ -31,7 +31,8 @@ body {
 #b, #n {width:14%;}
 #r, #u{width:12%}
 #i{width:5%;}
-#ba, #a, #s, #h { width:24%;}
+#q{height:60%;}
+#ba, #a, #s, #h, #q { width:19%;}
 #b{cursor: url('assets/images/vodc9otcnpex.png'), auto;}
 
 .moving_gif_col{
@@ -98,18 +99,12 @@ body {
     #b, #n {width:20%;}
     #r, #u{width:20%}
     #i{width:10%;}
+    #qm{display:inline-block !important;height:50%;}
 }
 @media only screen and (max-width:768px) and (max-height:1024px){
     #music{  margin-top:26vw;  }
-    #countdown{font-size:4.5em;}
-    .container-fluid .moving_gif{
-        width:270%;
-        left:-53vw;
-        top:-23vh;
-    }
-
 }
 @media only screen and (max-width: 560px){
-    #ba, #a, #s, #h { width:19%;}
+    #ba, #a, #s, #h, #qm{ width:18%;}
     #music{margin-top:18vh;}
 }

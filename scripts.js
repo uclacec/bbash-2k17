@@ -13,17 +13,39 @@ var bbash_time = new Date('Sep 26, 2017 02:00:00 GMT');
 
 $(document).ready(function() {
 
-    $('.moving_gif').mouseenter(function(){
+    $('.bruin').mouseenter(function(){
         $('#pre-click').addClass('inactive');
         $('#post-click').removeClass('inactive');
-        $('body').addClass('madeon-background');
         $('.text').addClass('inactive');
     });
-    $('.moving_gif').mouseleave(function(){
+    $('.bash').mouseenter(function(){
+        $('#pre-click').addClass('inactive');
+        $('#post-click').removeClass('inactive');
+        $('.text').addClass('inactive');
+    });
+    $('.bruin').mouseleave(function(){
         $('#post-click').addClass('inactive');
         $('#pre-click').removeClass('inactive');
-        $('body').removeClass('madeon-background');
         $('.text').removeClass('inactive');
+    });
+    $('.bash').mouseleave(function(){
+        $('#post-click').addClass('inactive');
+        $('#pre-click').removeClass('inactive');
+        $('.text').removeClass('inactive');
+    });
+    $('#q').mouseenter(function(){
+        $('#pre-click').addClass('inactive');
+        $('#post-click').addClass('inactive');
+        $('#2k17').removeClass('inactive');
+        $('.text').addClass('inactive');
+        $('body').css({'background-color':'black'})
+    });
+    $('#q').mouseleave(function(){
+        $('#post-click').addClass('inactive');
+        $('#pre-click').removeClass('inactive');
+        $('#2k17').addClass('inactive');
+        $('.text').removeClass('inactive');
+        $('body').css({'background-color':'white'})
     });
 //Fade in Animations
     var delay = 600;
@@ -47,6 +69,12 @@ $(document).ready(function() {
         $('#slow-wave').attr('src','assets/images/WavyGif_P1_Mobile.gif');
         $('#fast-wave').attr('src','assets/images/WavyGif_P2_Mobile.gif');
     }
+
+    $('.moving_gif a').click(function(event){
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            event.preventDefault();
+        }
+    });
 
     update();
     window.setInterval(update, 1000);
