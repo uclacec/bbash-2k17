@@ -128,7 +128,7 @@ html {
     #music{margin-top:17vh;}
     #hover{top:5vh;}
 }
-@media only screen and (max-height:850px){
+@media only screen and (max-height:900px){
     .container-fluid .moving_gif{
         width:110%;
         left:0;
@@ -140,5 +140,5 @@ html {
         margin-top:25vw;
         margin-left:18vw;
     }
-    #countdown{font-size:.9em; top:65%;}
+    #countdown{font-size:.7em; top:60%;}
 }
