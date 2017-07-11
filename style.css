@@ -128,3 +128,16 @@ html {
     #music{margin-top:17vh;}
     #hover{top:5vh;}
 }
+@media only screen and (max-height:850px){
+    .container-fluid .moving_gif{
+        width:110%;
+        left:0;
+        top:-10vh;
+    }
+    #music{
+        width:70vw;
+        height:38vw;
+        margin-top:25vw;
+        margin-left:18vw;
+    }
+}
