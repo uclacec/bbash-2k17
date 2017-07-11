@@ -94,6 +94,20 @@ html {
     font-weight: 900;
 }
 .mobile-break{display:none;}
+@media only screen and (max-height:900px){
+    .container-fluid .moving_gif{
+        width:110%;
+        left:0;
+        top:0vh;
+    }
+    #music{
+        width:70vw;
+        height:38vw;
+        margin-top:25vw;
+        margin-left:18vw;
+    }
+    #countdown{font-size:.9em; top:60%;}
+}
 @media only screen and (max-width: 990px) {
     #countdown{font-size:2em;}
     .mobile-break{display:block;}
@@ -127,18 +141,4 @@ html {
     #ba, #a, #s, #h, #qm{ width:18%;}
     #music{margin-top:17vh;}
     #hover{top:5vh;}
-}
-@media only screen and (max-height:900px){
-    .container-fluid .moving_gif{
-        width:110%;
-        left:0;
-        top:0vh;
-    }
-    #music{
-        width:70vw;
-        height:38vw;
-        margin-top:25vw;
-        margin-left:18vw;
-    }
-    #countdown{font-size:.7em; top:60%;}
 }
