@@ -96,9 +96,9 @@ html {
 .mobile-break{display:none;}
 @media only screen and (max-height:900px) and (max-width:780px){
     .container-fluid .moving_gif{
-        width:110%;
+        width:100%;
         left:0;
-        top:0vh;
+        top:-5vh;
     }
     #music{
         width:70vw;
