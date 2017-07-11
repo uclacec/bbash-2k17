@@ -4,22 +4,24 @@
 $(window).on("load", function() {
     // weave your magic here.
     var song = new Audio('assets/music/Chance.mp3');
-    // //R
-    // var song1 = new Audio('assets/music/song.mp3');
+    //R
+    var song1 = new Audio('assets/music/_B_RUIN_Madeon.mp3');
     //U
     var song2 = new Audio('assets/music/Madeon_Pay_No_Mind.mp3');
-    // //I
-    // var song3 = new Audio('assets/music/song.mp3');
+    //I
+    var song3 = new Audio('assets/music/_I__Matoma.mp3');
     //N
     var song4 = new Audio('assets/music/SweaterJoe.mp3');
     //BA
-    //var song5 = new Audio('assets/music/SweaterJoe.mp3');
+    var song5 = new Audio('assets/music/_B_ASH_Chance.mp3');
     //S
-    var song6 = new Audio('assets/music/SweaterBeats.mp3');
+    var song6 = new Audio('assets/music/Matoma.mp3');
     //A
-    //var song7 = new Audio('assets/music/SweaterBeats.mp3');
+    var song7 = new Audio('assets/music/SweaterBeats.mp3');
     //H
     var song8 = new Audio('assets/music/TyDolla$ign.mp3');
+    //??
+    var song9 = new Audio('assets/music/_17__Wavy.mp3');
 
 //letter B (bruin)
     $('#music #top-row #r').on("mouseenter",function (){
@@ -33,11 +35,11 @@ $(window).on("load", function() {
 
 //letter R
     $('#music #top-row #b').on("mouseenter",function (){
-        //song1.play();
+        song1.play();
         $('#body').css({'background-image':'url(assets/images/backgrounds/2R_Crowd.jpg)'});
     });
     $('#music #top-row #b').on("mouseleave click",function(){
-        //song1.pause();
+        song1.pause();
         $('#body').css({'background-image':'url()'})
     });
 
@@ -53,11 +55,11 @@ $(window).on("load", function() {
 
 //letter I
     $('#music #top-row #i').on("mouseenter",function (){
-        //song3.play();
+        song3.play();
         $('#body').css({'background-image':'url(assets/images/backgrounds/4I_Dance.jpg)'});
     });
     $('#music #top-row #i').on("mouseleave click",function(){
-        //song3.pause();
+        song3.pause();
         $('#body').css({'background-image':'url()'})
     });
 
@@ -73,11 +75,11 @@ $(window).on("load", function() {
 
 //letter BA
     $('#music #bottom-row #ba').on("mouseenter",function (){
-        //song5.play();
+        song5.play();
         $('#body').css({'background-image':'url(assets/images/backgrounds/6B_Carnival.jpg)'});
     });
     $('#music #bottom-row #ba').on("mouseleave click",function(){
-        //song5.pause();
+        song5.pause();
         $('#body').css({'background-image':'url()'})
     });
 
@@ -93,11 +95,11 @@ $(window).on("load", function() {
 
 //letter S
     $('#music #bottom-row #s').on("mouseenter",function (){
-        //song7.play();
+        song7.play();
         $('#body').css({'background-image':'url(assets/images/backgrounds/8S_Crowd.jpg)'});
     });
     $('#music #bottom-row #s').on("mouseleave click",function(){
-        //song7.pause();
+        song7.pause();
         $('#body').css({'background-image':'url()'})
     });
 
@@ -110,6 +112,15 @@ $(window).on("load", function() {
         song8.pause();
         $('#body').css({'background-image':'url()'})
     });
+
+    //letter ??
+    $('#music #bottom-row #q').on("mouseenter",function (){
+        song9.play();
+    });
+    $('#music #bottom-row #q').on("mouseleave click",function(){
+        song9.pause();
+    });
+
 
     if($('html').width() <= 600){
         //[b, r, u, i, n, ba, a, s, h]
@@ -178,14 +189,14 @@ $(window).on("load", function() {
         //I
         $('#music #top-row #i').on("click",function (){
             if(tapped[3] === false){
-                //song3.play();
+                song3.play();
                 $('#body').css({'background-image':'url(assets/images/backgrounds/4I_Dance.jpg)'});
                 tapped[3] = true;
                 $('#post-click').removeClass('inactive');
                 $('#pre-click').addClass('inactive');
             } else {
                 tapped[3] = false;
-                //song3.pause();
+                song3.pause();
                 $('#post-click').addClass('inactive');
                 $('#pre-click').removeClass('inactive');
                 $('#body').css({'background-image':''});
@@ -212,14 +223,14 @@ $(window).on("load", function() {
         //BA
         $('#music #bottom-row #ba').on("click",function (){
             if(tapped[5] === false){
-                //song5.play();
+                song5.play();
                 $('#body').css({'background-image':'url(assets/images/backgrounds/6B_Carnival.jpg)'});
                 tapped[5] = true;
                 $('#post-click').removeClass('inactive');
                 $('#pre-click').addClass('inactive');
             } else {
                 tapped[5] = false;
-                //song5.pause();
+                song5.pause();
                 $('#post-click').addClass('inactive');
                 $('#pre-click').removeClass('inactive');
                 $('#body').css({'background-image':''});
@@ -283,6 +294,7 @@ $(window).on("load", function() {
         $('#music #bottom-row #qm').on("click",function (){
             if(tapped[8] === false){
                 tapped[8] = true;
+                song9.play();
                 $('#hover').addClass('inactive');
                 $('#pre-click').addClass('inactive');
                 $('#post-click').addClass('inactive');
@@ -291,6 +303,7 @@ $(window).on("load", function() {
                 $('body').css({'background-color':'black'})
             } else {
                 tapped[8] = false;
+                song9.pause();
                 $('#hover').removeClass('inactive');
                 $('#post-click').addClass('inactive');
                 $('#pre-click').removeClass('inactive');
