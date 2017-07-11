@@ -75,7 +75,7 @@ $(document).ready(function() {
         $('#slow-wave').attr('src','assets/images/WavyGif_P1_Mobile.gif');
         $('#fast-wave').attr('src','assets/images/WavyGif_P2_Mobile.gif');
         $('.question').attr('src','assets/images/-----_Mobile.gif');
-        $('#hover').text('Tap to experience...')
+        $('#tap').text('tap to experience...')
     }
 
     $('.moving_gif a').click(function(event){

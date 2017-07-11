@@ -29,7 +29,7 @@ html {
 .button{
     display:inline-block;
     height:100%;
-    border:2px solid grey;
+    /*border:2px solid grey;*/
     z-index:1000;
 }
 #b, #n {width:14%;}
@@ -38,7 +38,7 @@ html {
 #q{height:60%;}
 #ba, #a, #s, #h, #q { width:19%;}
 
-#b{cursor: url('assets/images/chancelogo.png'), auto;}
+#r{cursor: url('assets/images/chancelogo.png'), auto;}
 #u{cursor: url('assets/images/madeonlogo.png'),auto;}
 #a{cursor: url('assets/images/sweaterbeatslogo.gif'),auto;}
 #h{cursor: url('assets/images/tydollalogo.png'),auto;}
@@ -98,14 +98,14 @@ html {
     #countdown{font-size:2em;}
     .mobile-break{display:block;}
     .container-fluid .moving_gif{
-        width:190%;
+        width:185%;
         left:-40vw;
     }
     #music{
         width:100vw;
         height:50vw;
-        margin-top:18vw;
-        margin-left:0;
+        margin-top:17vw;
+        margin-left:-3vw;
     }
     #top-row{
         margin-left:12%;
@@ -125,5 +125,6 @@ html {
 }
 @media only screen and (max-width: 560px){
     #ba, #a, #s, #h, #qm{ width:18%;}
-    #music{margin-top:18vh;}
+    #music{margin-top:17vh;}
+    #hover{top:5vh;}
 }

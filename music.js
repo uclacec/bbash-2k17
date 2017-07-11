@@ -22,21 +22,21 @@ $(window).on("load", function() {
     var song8 = new Audio('assets/music/TyDolla$ign.mp3');
 
 //letter B (bruin)
-    $('#music #top-row #b').on("mouseenter",function (){
+    $('#music #top-row #r').on("mouseenter",function (){
         song.play();
         $('#body').css({'background-image':'url(assets/images/backgrounds/1B_Chance.jpg)'});
     });
-    $('#music #top-row #b').on("mouseleave click",function(){
+    $('#music #top-row #r').on("mouseleave click",function(){
         song.pause();
         $('#body').css({'background-image':'url()'})
     });
 
 //letter R
-    $('#music #top-row #r').on("mouseenter",function (){
+    $('#music #top-row #b').on("mouseenter",function (){
         //song1.play();
         $('#body').css({'background-image':'url(assets/images/backgrounds/2R_Crowd.jpg)'});
     });
-    $('#music #top-row #r').on("mouseleave click",function(){
+    $('#music #top-row #b').on("mouseleave click",function(){
         //song1.pause();
         $('#body').css({'background-image':'url()'})
     });
@@ -125,7 +125,7 @@ $(window).on("load", function() {
             $('body').css({'background-color':'white'})
         });
         //B
-        $('#music #top-row #b').on("click",function (){
+        $('#music #top-row #r').on("click",function (){
             if(tapped[0] === false){
                 song.play();
                 $('#body').css({'background-image':'url(assets/images/backgrounds/1B_Chance.jpg)'});
@@ -142,7 +142,7 @@ $(window).on("load", function() {
             }
         });
         //R
-        $('#music #top-row #r').on("click",function (){
+        $('#music #top-row #b').on("click",function (){
             if(tapped[1] === false){
                 //song1.play();
                 $('#body').css({'background-image':'url(assets/images/backgrounds/2R_Crowd.jpg)'});
