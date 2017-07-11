@@ -94,7 +94,7 @@ html {
     font-weight: 900;
 }
 .mobile-break{display:none;}
-@media only screen and (max-height:900px) and (max-width:780px){
+@media only screen and (max-height:850px) and (max-width:780px){
     .container-fluid .moving_gif{
         width:100%;
         left:0;
