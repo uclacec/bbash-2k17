@@ -132,7 +132,7 @@ html {
     .container-fluid .moving_gif{
         width:110%;
         left:0;
-        top:-5vh;
+        top:0vh;
     }
     #music{
         width:70vw;
@@ -140,5 +140,5 @@ html {
         margin-top:25vw;
         margin-left:18vw;
     }
-    #countdown{font-size:1em; top:65%;}
+    #countdown{font-size:.9em; top:65%;}
 }
