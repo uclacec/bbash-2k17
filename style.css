@@ -29,7 +29,7 @@ html {
 .button{
     display:inline-block;
     height:100%;
-    border:2px solid grey;
+    /*border:2px solid grey;*/
     z-index:1000;
 }
 #b, #n {width:14%;}
