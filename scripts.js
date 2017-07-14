@@ -71,7 +71,7 @@ $(document).ready(function() {
         $('#countdown .time').text(timestr);
     }
 
-    if($('html').width() <= 900){
+    if($('html').width() <= 700){
         $('#slow-wave').attr('src','assets/images/WavyGif_P1_Mobile.gif');
         $('#fast-wave').attr('src','assets/images/WavyGif_P2_Mobile.gif');
         $('.question').attr('src','assets/images/-----_Mobile.gif');
