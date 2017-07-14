@@ -53,7 +53,7 @@ html {
     text-align:center;
     font-style:italic;
     font-weight:900;
-    top:10vh;
+    top:5vh;
     position:fixed;
     font-size:2em;
 }
@@ -82,6 +82,8 @@ html {
     margin-bottom:5vh;
 }
 
+.days{margin-right:50px;}
+
 #sponsors{
     position: fixed;
     bottom: 8%;
@@ -93,6 +95,12 @@ html {
     font-size: 1.25em;
     font-weight: 900;
 }
+
+.logo{
+    width:70px;
+    height:70px;
+}
+
 .mobile-break{display:none;}
 @media only screen and (max-height:550px) and (max-width:780px){
     .container-fluid .moving_gif{
@@ -140,5 +148,6 @@ html {
 @media only screen and (max-width: 560px){
     #ba, #a, #s, #h, #qm{ width:18%;}
     #music{margin-top:17vh;}
-    #hover{top:5vh;}
+    #hover{top:5vh; font-size:1.4em;}
+    .days{margin-right:0;}
 }

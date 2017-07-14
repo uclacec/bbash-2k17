@@ -64,9 +64,9 @@ $(document).ready(function() {
     function update() {
         var units = countdown.DAYS | countdown.HOURS | countdown.MINUTES | countdown.SECONDS;
         var count_obj = countdown(null, bbash_time, units);
-        var daystr = pad(count_obj.days) + '\xa0\xa0\xa0DAYS';
+        var daystr = pad(count_obj.days) + '\xa0\xa0DAYS';
         var timestr = pad(count_obj.hours) +
-            '\xa0\xa0\xa0:\xa0\xa0\xa0' + pad(count_obj.minutes) + '\xa0\xa0\xa0:\xa0\xa0\xa0' + pad(count_obj.seconds);
+            '\xa0\xa0:\xa0\xa0' + pad(count_obj.minutes) + '\xa0\xa0:\xa0\xa0' + pad(count_obj.seconds);
         $('#countdown .days').text(daystr);
         $('#countdown .time').text(timestr);
     }
