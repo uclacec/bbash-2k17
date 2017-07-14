@@ -19,7 +19,7 @@ $(window).on("load", function() {
     //A
     var song7 = new Audio('assets/music/SweaterBeats.mp3');
     //H
-    var song8 = new Audio('assets/music/TyDolla$ign.mp3');
+    var song8 = new Audio('assets/music/TyDolla.mp3');
     //??
     var song9 = new Audio('assets/music/_17__Wavy.mp3');
 
