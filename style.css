@@ -106,7 +106,7 @@ html {
     .container-fluid .moving_gif{
         width:100%;
         left:0;
-        top:-5vh;
+        top:-20vh;
     }
     #music{
         width:70vw;
