@@ -29,7 +29,7 @@ html {
 .button{
     display:inline-block;
     height:100%;
-    /*border:2px solid grey;*/
+    /*border:2px solid grey*/;
     z-index:1000;
 }
 #b, #n {width:14%;}
@@ -102,6 +102,20 @@ html {
 }
 
 .mobile-break{display:none;}
+
+@media only screen and (max-height:760px) {
+    .container-fluid .moving_gif{
+        top:-30vh;
+    }
+    #music{
+        width:60vw;
+        height:22vw;
+        margin-top:15vh;
+        margin-left:20vw;
+    }
+    #countdown{font-size:3em; top:75%;}
+    #sponsors{bottom:3%;}
+}
 
 @media only screen and (max-width: 990px) {
     #countdown{font-size:2em;}
